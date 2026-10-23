@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MJB Strategies</title>
+  <meta name="description" content="MJB Strategies is a New York-based institutional investments services firm operating at the union of AI and fund investments.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: hsl(0 0% 98%);
+      --ink: #000;
+      --white: #fff;
+      --gutter: 30px;
+      --max: 1340px;
+      --radius: 6px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: var(--bg); color: var(--ink); }
+    body {
+      font-family: "Roboto", system-ui, -apple-system, sans-serif;
+      font-weight: 400;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3, h4 {
+      font-family: "Roboto Condensed", "Roboto", sans-serif;
+      font-weight: 600;
+      margin: 0;
+      line-height: 1.15;
+    }
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
+
+    header { padding: 22px 0 14px; }
+    header .brand { font-family: "Roboto Condensed", sans-serif; font-weight: 600; font-size: 26px; }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      border-radius: var(--radius);
+      overflow: hidden;
+      min-height: 560px;
+      background: #2b3a3f url("img/hero-1.webp") center 18% / cover no-repeat;
+      display: flex;
+      align-items: flex-start;
+      padding: 160px 60px 60px;
+      color: var(--white);
+    }
+    .hero h2 {
+      font-size: clamp(28px, 3.2vw, 44px);
+      max-width: 1180px;
+      text-shadow: 0 1px 6px rgba(0,0,0,.25);
+    }
+
+    /* Two-column band */
+    .band {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 50px;
+    }
+    .panel {
+      position: relative;
+      border-radius: var(--radius);
+      overflow: hidden;
+      min-height: 620px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: var(--white);
+      display: flex;
+      padding: 60px;
+    }
+    .panel.mission { background-image: url("img/hero-2.webp"); align-items: center; }
+    .panel.mission h3 { font-size: clamp(26px, 2.6vw, 36px); max-width: 520px; text-shadow: 0 1px 6px rgba(0,0,0,.25); }
+
+    .panel.services { background-image: url("img/hero-3.webp"); align-items: center; padding-left: 100px; }
+    .services .inner { max-width: 520px; display: grid; gap: 34px; }
+    .services h4 { font-size: 22px; margin-bottom: 8px; }
+    .services p { margin: 0; font-size: 15px; max-width: 480px; text-shadow: 0 1px 4px rgba(0,0,0,.25); }
+
+    /* Footer */
+    footer.wrap { text-align: center; padding: 220px var(--gutter) 120px; }
+    footer h3 { font-size: 28px; }
+    footer p { margin: 36px 0 0; font-size: 17px; line-height: 1.6; }
+
+    @media (max-width: 900px) {
+      :root { --gutter: 16px; }
+      .hero { min-height: 420px; padding: 90px 28px 40px; }
+      .band { grid-template-columns: 1fr; }
+      .panel { min-height: 460px; padding: 40px 28px; }
+      .panel.services { padding-left: 28px; }
+      footer.wrap { padding: 120px var(--gutter) 80px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <a class="brand" href="/">MJB Strategies</a>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h2>Founded in 2024, MJB Strategies is a New York-based institutional investments services firm which builds sophisticated software and long-term partnerships, operating at the union of AI and fund investments.</h2>
+    </section>
+
+    <section class="band">
+      <div class="panel mission">
+        <h3>Our mission is to develop revolutionary institutional investment technology and methods</h3>
+      </div>
+      <div class="panel services">
+        <div class="inner">
+          <div>
+            <h4>LP Search Engine</h4>
+            <p>Our state-of-the-art LP search engine empowers fund marketers to deploy targeted campaigns.</p>
+          </div>
+          <div>
+            <h4>Software Development</h4>
+            <p>Our software development platform offers LPs, GPs, and marketers technical engines to enhance investment and operational efforts.</p>
+          </div>
+          <div>
+            <h4>Investment Intelligence</h4>
+            <p>Our investment intelligence platform expands upon our software development efforts to drive investment insights with unprecedented efficiency.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <h3>MJB Strategies, Inc.</h3>
+    <p>
+      <a href="mailto:info@mjb-strategies.com">info@mjb-strategies.com</a><br>
+      <a href="tel:+12129310334">+1 (212) 931-0334</a>
+    </p>
+  </footer>
+</body>
+</html>
